@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912242974892",
+    "project_id": "focus-trail",
+    "storage_bucket": "focus-trail.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912242974892:android:15215caca76878750fff09",
+        "android_client_info": {
+          "package_name": "com.example.focus_trail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBktQi3chAQ3BCIwm_9eepVNBHX7nLUvtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912242974892:android:0bc929ecb81949cf0fff09",
+        "android_client_info": {
+          "package_name": "com.focustrail.app.focus_trail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBktQi3chAQ3BCIwm_9eepVNBHX7nLUvtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

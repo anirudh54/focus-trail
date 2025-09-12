@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub:*)",
+      "Bash(flutter run:*)",
+      "Bash(timeout:*)",
+      "Read(//c/Users/bhava/Desktop/focus trail/**)",
+      "Bash(flutter:*)",
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
