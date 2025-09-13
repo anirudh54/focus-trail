@@ -85,7 +85,7 @@ class _MainNavigationState extends State<MainNavigation> {
               ),
             // Semi-transparent overlay for better content visibility
             Container(
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withValues(alpha: 0.3),
             ),
             // Screen content
             _screens[_currentIndex],

@@ -1,5 +1,4 @@
 import 'package:audioplayers/audioplayers.dart';
-import '../constants/app_constants.dart';
 
 class AudioService {
   static final AudioService _instance = AudioService._internal();
@@ -17,20 +16,15 @@ class AudioService {
 
   Future<void> playAmbientSound(String soundName) async {
     try {
-      String soundPath;
-      
       switch (soundName) {
         case 'Forest':
-          soundPath = AppConstants.forestSound;
           break;
         case 'Rain':
-          soundPath = AppConstants.rainSound;
           break;
         case 'White Noise':
-          soundPath = AppConstants.whiteNoiseSound;
           break;
         default:
-          soundPath = AppConstants.forestSound;
+          break;
       }
 
       // For web, we'll use placeholder URLs or generate tones
@@ -48,7 +42,7 @@ class AudioService {
       // For the MVP demo, we'll track the state without actual audio
       
     } catch (e) {
-      print('Error playing ambient sound: $e');
+      // Error playing ambient sound: $e
     }
   }
 
@@ -58,7 +52,7 @@ class AudioService {
       _isPlaying = false;
       _currentSound = null;
     } catch (e) {
-      print('Error stopping ambient sound: $e');
+      // Error stopping ambient sound: $e
     }
   }
 
@@ -67,7 +61,7 @@ class AudioService {
       await _audioPlayer.pause();
       _isPlaying = false;
     } catch (e) {
-      print('Error pausing ambient sound: $e');
+      // Error pausing ambient sound: $e
     }
   }
 
@@ -76,7 +70,7 @@ class AudioService {
       await _audioPlayer.resume();
       _isPlaying = true;
     } catch (e) {
-      print('Error resuming ambient sound: $e');
+      // Error resuming ambient sound: $e
     }
   }
 
@@ -85,7 +79,7 @@ class AudioService {
       _volume = volume.clamp(0.0, 1.0);
       await _audioPlayer.setVolume(_volume);
     } catch (e) {
-      print('Error setting volume: $e');
+      // Error setting volume: $e
     }
   }
 
@@ -97,11 +91,11 @@ class AudioService {
       await notificationPlayer.setVolume(_volume);
       
       // For demo purposes, we'll just track that a notification sound was played
-      print('Notification sound played');
+      // Notification sound played
       
       await notificationPlayer.dispose();
     } catch (e) {
-      print('Error playing notification sound: $e');
+      // Error playing notification sound: $e
     }
   }
 

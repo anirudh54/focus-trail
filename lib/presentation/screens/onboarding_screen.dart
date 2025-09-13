@@ -120,7 +120,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             width: 200,
             height: 200,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Icon(
@@ -142,7 +142,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           Text(
             'Every work session takes you on incredible journeys around the world',
             style: AppTypography.bodyLarge.copyWith(
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
             ),
             textAlign: TextAlign.center,
           ),
@@ -161,7 +161,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             width: 200,
             height: 200,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Icon(
@@ -209,7 +209,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           // User name input
           Container(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: TextField(
@@ -217,7 +217,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 hintText: 'Your name (optional)',
-                hintStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
+                hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.all(16),
               ),
@@ -229,7 +229,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           // Notifications toggle
           Container(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: SwitchListTile(
@@ -252,14 +252,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           // Trail selection
           Container(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: DropdownButtonFormField<String>(
               value: _selectedTrail,
               decoration: InputDecoration(
                 labelText: 'Select your first trail',
-                labelStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
+                labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.all(16),
               ),
@@ -301,7 +301,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           child: Text(
             text,
             style: AppTypography.bodyLarge.copyWith(
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
             ),
           ),
         ),
@@ -325,7 +325,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 decoration: BoxDecoration(
                   color: _currentPage == index
                       ? Colors.white
-                      : Colors.white.withOpacity(0.5),
+                      : Colors.white.withValues(alpha: 0.5),
                   borderRadius: BorderRadius.circular(4),
                 ),
               );
@@ -343,7 +343,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: _previousPage,
                   child: Text(
                     'Back',
-                    style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                    style: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                   ),
                 )
               else
@@ -374,7 +374,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onPressed: _completeOnboarding,
                 child: Text(
                   'Maybe later',
-                  style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                  style: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                 ),
               ),
             ),

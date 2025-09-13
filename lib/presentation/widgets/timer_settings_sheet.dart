@@ -3,7 +3,6 @@ import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_typography.dart';
 import '../../core/constants/app_constants.dart';
 import '../blocs/timer/timer_bloc.dart';
-import '../blocs/timer/timer_state.dart';
 import '../blocs/timer/timer_event.dart';
 
 class TimerSettingsSheet extends StatefulWidget {
@@ -224,25 +223,26 @@ class _TimerSettingsSheetState extends State<TimerSettingsSheet> {
         ...AppConstants.ambientSounds.map((sound) {
           return Container(
             margin: const EdgeInsets.only(bottom: 8),
-            child: RadioListTile<String>(
-              title: Text(sound),
-              value: sound,
-              groupValue: _selectedSound,
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() {
-                    _selectedSound = value;
-                  });
-                }
-              },
-              activeColor: AppColors.primary,
-              tileColor: AppColors.background,
-              shape: RoundedRectangleBorder(
+            child: Container(
+              decoration: BoxDecoration(
+                color: AppColors.background,
                 borderRadius: BorderRadius.circular(12),
+              ),
+              child: RadioListTile<String>(
+                title: Text(sound),
+                value: sound,
+                groupValue: _selectedSound,
+                onChanged: (value) {
+                  if (value != null) {
+                    setState(() {
+                      _selectedSound = value;
+                    });
+                  }
+                },
               ),
             ),
           );
-        }).toList(),
+        }),
       ],
     );
   }

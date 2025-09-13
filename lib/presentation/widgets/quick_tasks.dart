@@ -48,7 +48,7 @@ class _QuickTasksState extends State<QuickTasks> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
+              color: Colors.white.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
@@ -56,14 +56,14 @@ class _QuickTasksState extends State<QuickTasks> {
                 Icon(
                   Icons.info_outline,
                   size: 16,
-                  color: Colors.white.withOpacity(0.7),
+                  color: Colors.white.withValues(alpha: 0.7),
                 ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     'Maximum ${AppConstants.maxActiveTasks} tasks reached. Complete some to add more.',
                     style: AppTypography.bodySmall.copyWith(
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha: 0.7),
                     ),
                   ),
                 ),
@@ -78,10 +78,10 @@ class _QuickTasksState extends State<QuickTasks> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(task.isCompleted ? 0.1 : 0.2),
+        color: Colors.white.withValues(alpha: task.isCompleted ? 0.1 : 0.2),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: Colors.white.withOpacity(0.3),
+          color: Colors.white.withValues(alpha: 0.3),
           width: 1,
         ),
       ),
@@ -133,7 +133,7 @@ class _QuickTasksState extends State<QuickTasks> {
             child: Icon(
               Icons.close,
               size: 18,
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha: 0.7),
             ),
           ),
         ],
@@ -145,10 +145,10 @@ class _QuickTasksState extends State<QuickTasks> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.2),
+        color: Colors.white.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: Colors.white.withOpacity(0.3),
+          color: Colors.white.withValues(alpha: 0.3),
           width: 1,
         ),
       ),
@@ -161,7 +161,7 @@ class _QuickTasksState extends State<QuickTasks> {
               decoration: InputDecoration(
                 hintText: 'Add a quick task...',
                 hintStyle: TextStyle(
-                  color: Colors.white.withOpacity(0.6),
+                  color: Colors.white.withValues(alpha: 0.6),
                 ),
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.symmetric(vertical: 12),
@@ -173,7 +173,7 @@ class _QuickTasksState extends State<QuickTasks> {
             onTap: () => _addTask(_textController.text),
             child: Icon(
               Icons.add,
-              color: Colors.white.withOpacity(0.8),
+              color: Colors.white.withValues(alpha: 0.8),
               size: 20,
             ),
           ),

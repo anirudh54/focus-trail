@@ -18,7 +18,7 @@ class TimerDisplay extends StatelessWidget {
             Text(
               _getStatusText(state),
               style: AppTypography.titleMedium.copyWith(
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
               ),
             ),
             
@@ -35,7 +35,7 @@ class TimerDisplay extends StatelessWidget {
                   child: CircularProgressIndicator(
                     value: state.progress,
                     strokeWidth: 8,
-                    backgroundColor: Colors.white.withOpacity(0.3),
+                    backgroundColor: Colors.white.withValues(alpha: 0.3),
                     valueColor: AlwaysStoppedAnimation<Color>(
                       _getTimerColor(state),
                     ),
@@ -56,7 +56,7 @@ class TimerDisplay extends StatelessWidget {
                     Text(
                       state.isBreakTime ? 'Break Time' : 'Focus Time',
                       style: AppTypography.bodyMedium.copyWith(
-                        color: Colors.white.withOpacity(0.7),
+                        color: Colors.white.withValues(alpha: 0.7),
                       ),
                     ),
                   ],
@@ -71,7 +71,7 @@ class TimerDisplay extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(

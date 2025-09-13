@@ -4,7 +4,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../data/models/session_record.dart';
 import '../../../data/models/user_progress.dart';
-import '../../../data/models/checkpoint.dart';
 import '../../../data/datasources/trail_data.dart';
 import '../../../core/services/audio_service.dart';
 import 'package:hive/hive.dart';

@@ -18,7 +18,7 @@ class TrailView extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -37,8 +37,8 @@ class TrailView extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    AppColors.primary.withOpacity(0.8),
-                    AppColors.secondary.withOpacity(0.8),
+                    AppColors.primary.withValues(alpha: 0.8),
+                    AppColors.secondary.withValues(alpha: 0.8),
                   ],
                 ),
               ),
@@ -57,7 +57,7 @@ class TrailView extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(0.7),
+                    Colors.black.withValues(alpha: 0.7),
                   ],
                 ),
               ),
@@ -88,7 +88,7 @@ class TrailView extends StatelessWidget {
                               Text(
                                 'Current Progress',
                                 style: AppTypography.bodySmall.copyWith(
-                                  color: Colors.white.withOpacity(0.8),
+                                  color: Colors.white.withValues(alpha: 0.8),
                                 ),
                               ),
                               Text(
@@ -129,13 +129,13 @@ class TrailView extends StatelessWidget {
                         Icon(
                           Icons.flag,
                           size: 16,
-                          color: Colors.white.withOpacity(0.8),
+                          color: Colors.white.withValues(alpha: 0.8),
                         ),
                         const SizedBox(width: 8),
                         Text(
                           '1.5 miles to Japanese Tea Garden',
                           style: AppTypography.bodySmall.copyWith(
-                            color: Colors.white.withOpacity(0.8),
+                            color: Colors.white.withValues(alpha: 0.8),
                           ),
                         ),
                       ],
@@ -163,13 +163,13 @@ class TrailView extends StatelessWidget {
             Text(
               'Trail Progress',
               style: AppTypography.bodySmall.copyWith(
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
               ),
             ),
             Text(
               '${(progressPercentage * 100).toInt()}%',
               style: AppTypography.bodySmall.copyWith(
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
               ),
             ),
           ],
@@ -178,7 +178,7 @@ class TrailView extends StatelessWidget {
         Container(
           height: 8,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(4),
           ),
           child: FractionallySizedBox(
@@ -190,7 +190,7 @@ class TrailView extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha: 0.5),
                     blurRadius: 8,
                   ),
                 ],

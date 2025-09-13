@@ -17,9 +17,9 @@ void main() async {
   // Initialize Firebase (only for mobile platforms)
   try {
     await Firebase.initializeApp();
-    print('✅ Firebase initialized successfully');
+    // Firebase initialized successfully
   } catch (e) {
-    print('⚠️ Firebase initialization failed: $e');
+    // Firebase initialization failed: $e
     // Continue without Firebase for web development
   }
   

@@ -2,7 +2,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../data/datasources/trail_data.dart';
-import '../../../data/models/trail.dart';
 import 'trail_event.dart';
 import 'trail_state.dart';
 
@@ -57,7 +56,7 @@ class TrailBloc extends Bloc<TrailEvent, TrailState> {
       emit(state.copyWith(currentTrail: selectedTrail));
     } catch (e) {
       // Trail not found, ignore the selection
-      print('Trail not found: ${event.trailId}');
+      // Trail not found: ${event.trailId}
     }
   }
 }

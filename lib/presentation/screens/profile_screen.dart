@@ -43,10 +43,10 @@ class ProfileScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.15),
+        color: Colors.white.withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withOpacity(0.3),
+          color: Colors.white.withValues(alpha: 0.3),
           width: 1,
         ),
       ),
@@ -56,7 +56,7 @@ class ProfileScreen extends StatelessWidget {
             width: 80,
             height: 80,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha: 0.3),
               borderRadius: BorderRadius.circular(40),
             ),
             child: const Icon(
@@ -80,7 +80,7 @@ class ProfileScreen extends StatelessWidget {
                 Text(
                   'Member since Nov 2024',
                   style: AppTypography.bodyMedium.copyWith(
-                    color: Colors.white.withOpacity(0.8),
+                    color: Colors.white.withValues(alpha: 0.8),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -121,10 +121,10 @@ class ProfileScreen extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.15),
+            color: Colors.white.withValues(alpha: 0.15),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha: 0.3),
               width: 1,
             ),
           ),
@@ -157,10 +157,10 @@ class ProfileScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: isUnlocked 
                 ? AppColors.primary 
-                : Colors.white.withOpacity(0.2),
+                : Colors.white.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(30),
             border: Border.all(
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha: 0.3),
               width: 2,
             ),
           ),
@@ -169,7 +169,7 @@ class ProfileScreen extends StatelessWidget {
             size: 24,
             color: isUnlocked 
                 ? Colors.white 
-                : Colors.white.withOpacity(0.5),
+                : Colors.white.withValues(alpha: 0.5),
           ),
         ),
         const SizedBox(height: 8),
@@ -178,7 +178,7 @@ class ProfileScreen extends StatelessWidget {
           style: AppTypography.labelSmall.copyWith(
             color: isUnlocked 
                 ? Colors.white 
-                : Colors.white.withOpacity(0.5),
+                : Colors.white.withValues(alpha: 0.5),
             fontWeight: FontWeight.w500,
           ),
           textAlign: TextAlign.center,
@@ -223,10 +223,10 @@ class ProfileScreen extends StatelessWidget {
       width: 100,
       margin: const EdgeInsets.only(right: 12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.15),
+        color: Colors.white.withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: Colors.white.withOpacity(0.3),
+          color: Colors.white.withValues(alpha: 0.3),
           width: 1,
         ),
       ),
@@ -267,10 +267,10 @@ class ProfileScreen extends StatelessWidget {
         const SizedBox(height: 16),
         Container(
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.15),
+            color: Colors.white.withValues(alpha: 0.15),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha: 0.3),
               width: 1,
             ),
           ),
@@ -295,7 +295,7 @@ class ProfileScreen extends StatelessWidget {
           child: Text(
             'Version 1.0.0',
             style: AppTypography.bodySmall.copyWith(
-              color: Colors.white.withOpacity(0.6),
+              color: Colors.white.withValues(alpha: 0.6),
             ),
           ),
         ),
@@ -317,7 +317,7 @@ class ProfileScreen extends StatelessWidget {
       ),
       trailing: Icon(
         Icons.chevron_right,
-        color: Colors.white.withOpacity(0.7),
+        color: Colors.white.withValues(alpha: 0.7),
       ),
       onTap: onTap,
     );
@@ -347,7 +347,7 @@ class ProfileScreen extends StatelessWidget {
 
   Widget _buildSettingsDivider() {
     return Divider(
-      color: Colors.white.withOpacity(0.2),
+      color: Colors.white.withValues(alpha: 0.2),
       height: 1,
     );
   }

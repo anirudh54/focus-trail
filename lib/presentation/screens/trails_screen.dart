@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_typography.dart';
-import '../../data/datasources/trail_data.dart';
 import '../../data/models/trail.dart';
 import '../blocs/trail/trail_bloc.dart';
 import '../blocs/trail/trail_state.dart';
@@ -97,7 +96,7 @@ class TrailsScreen extends StatelessWidget {
             : null,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -117,8 +116,8 @@ class TrailsScreen extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      AppColors.primary.withOpacity(0.8),
-                      AppColors.secondary.withOpacity(0.8),
+                      AppColors.primary.withValues(alpha: 0.8),
+                      AppColors.secondary.withValues(alpha: 0.8),
                     ],
                   ),
                 ),
@@ -139,7 +138,7 @@ class TrailsScreen extends StatelessWidget {
                     end: Alignment.bottomCenter,
                     colors: [
                       Colors.transparent,
-                      Colors.black.withOpacity(0.7),
+                      Colors.black.withValues(alpha: 0.7),
                     ],
                   ),
                 ),
@@ -171,7 +170,7 @@ class TrailsScreen extends StatelessWidget {
                                 Text(
                                   trail.location,
                                   style: AppTypography.bodyMedium.copyWith(
-                                    color: Colors.white.withOpacity(0.8),
+                                    color: Colors.white.withValues(alpha: 0.8),
                                   ),
                                 ),
                               ],
@@ -262,11 +261,11 @@ class TrailsScreen extends StatelessWidget {
                                   },
                             style: OutlinedButton.styleFrom(
                               foregroundColor: trail.isPremium 
-                                  ? Colors.white.withOpacity(0.5)
+                                  ? Colors.white.withValues(alpha: 0.5)
                                   : Colors.white,
                               side: BorderSide(
                                 color: trail.isPremium 
-                                    ? Colors.white.withOpacity(0.5)
+                                    ? Colors.white.withValues(alpha: 0.5)
                                     : Colors.white,
                               ),
                             ),
@@ -288,7 +287,7 @@ class TrailsScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.2),
+        color: Colors.white.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
